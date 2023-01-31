@@ -27,12 +27,9 @@ const NavBar = () => {
     };
   }, []);
 
-  const test = (test: string) => {
-    console.log(test);
-  };
   return (
     <nav
-      className={`w-[100%] shadow h-[60px] bg-[#fff] flex items-center justify-between px-[1rem] top-0 left-0 right-0 bg-[rgba(54,25,33,0.2)] ${
+      className={`w-[100%] shadow h-[60px] z-50 flex items-center justify-between px-[3rem] top-0 left-0 right-0 bg-[rgba(54,25,33,0.2)] ${
         navBarPosition ? "fixed shadow-md" : "static"
       }`}>
       {/* Logo */}
@@ -54,11 +51,11 @@ const NavBar = () => {
         })}
       </ul>
       {/* Contact button  */}
-      <div className='contact hidden md:block'>
+      {/* <div className='contact hidden md:block'>
         <Button className='w-[108px] h-[32px] bg-[#fff] rounded-[4px] text-[#5E3BEE] text-[0.75rem] xl:text-[1rem] font-[400] leading-[150%] border-[1px] border-solid border-[#5E3BEE]'>
           Contact
         </Button>
-      </div>
+      </div> */}
       {/* Open Menu Button */}
       <div className='menuIcon block md:hidden'>
         <MenuButton onClick={() => setMenuState(true)}>

@@ -1,0 +1,19 @@
+.container{
+    @apply bg-[#fff] h-full flex items-center justify-between lg:px-[13.75rem];
+}
+
+.photo{
+    @apply w-[40%]
+}
+
+.info{
+    @apply w-[55%]
+}
+
+.name{
+    @apply text-[#361921] font-bold text-[3.1rem] leading-[3.75rem];
+}
+
+.title{
+    @apply text-[#000] font-light text-[2rem] leading-[2.375rem];
+}

@@ -3,9 +3,8 @@
 import Head from "next/head";
 import AboutSection from "../components/about";
 import HomeSection from "../components/home";
-
 import Layout from "../components/layout";
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 
 const Home = () => {
   return (
@@ -18,6 +17,16 @@ const Home = () => {
       <Layout>
         <HomeSection />
         <AboutSection />
+        {/* <a
+          target='_blank'
+          href='https://icons8.com/icon/Sx0c8V3R9jEJ/auth0-the-solution-you-need-for-web%2C-mobile%2C-iot%2C-and-internal-applications.'>
+          Auth0 the solution you need for web, mobile, IoT, and internal
+          applications.
+        </a>{" "}
+        icon by{" "}
+        <a target='_blank' href='https://icons8.com'>
+          Icons8
+        </a> */}
       </Layout>
     </>
   );

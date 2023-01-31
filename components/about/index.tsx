@@ -6,7 +6,7 @@ import Section from "../section";
 const AboutSection = () => {
   return (
     <Section>
-      <div id='home' className='bg-red-500 h-full'>
+      <div id='about' className='bg-[#361921] h-full'>
         Hello World!
       </div>
     </Section>
