@@ -1,3 +1,4 @@
 .container{
-    @apply w-full
+    @apply w-full h-[100vh];
+    scroll-snap-type: y mandatory;
 }
