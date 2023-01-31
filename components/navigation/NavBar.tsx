@@ -1,3 +1,5 @@
+/** @format */
+
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -30,22 +32,21 @@ const NavBar = () => {
   };
   return (
     <nav
-      className={`w-[100%] h-[10vh] bg-[#fff] flex items-center justify-between px-[1rem]  top-0 left-0 right-0 ${
+      className={`w-[100%] shadow h-[60px] bg-[#fff] flex items-center justify-between px-[1rem] top-0 left-0 right-0 bg-[rgba(54,25,33,0.2)] ${
         navBarPosition ? "fixed shadow-md" : "static"
-      }`}
-    >
+      }`}>
       {/* Logo */}
-      <div className="logo">
-        <Image src="/logo.png" width={100} height={25} />
+      <div className='logo'>
+        {/* <Image src='/logo.png' width={100} height={25} /> */}
+        Martins Ngene
       </div>
-      <ul className="links w-[50%] xl:w-[40%] items-center justify-between hidden md:flex">
+      <ul className='links w-[50%] xl:w-[40%] items-center justify-between hidden md:flex'>
         {/* Links from NavBar Schema mapped into buttons */}
         {Links.map((item, index) => {
           return (
             <Link key={index} href={item.route}>
               <Button
-                className={`text-[#1C1E53] text-[0.75rem] xl:text-[1rem] font-[400] leading-[150%]`}
-              >
+                className={`text-[#361921] text-[0.75rem] xl:text-[1.25rem] font-[700] leading-[1.5rem]`}>
                 {item.link}
               </Button>
             </Link>
@@ -53,13 +54,13 @@ const NavBar = () => {
         })}
       </ul>
       {/* Contact button  */}
-      <div className="contact hidden md:block">
-        <Button className="w-[108px] h-[32px] bg-[#fff] rounded-[4px] text-[#5E3BEE] text-[0.75rem] xl:text-[1rem] font-[400] leading-[150%] border-[1px] border-solid border-[#5E3BEE]">
+      <div className='contact hidden md:block'>
+        <Button className='w-[108px] h-[32px] bg-[#fff] rounded-[4px] text-[#5E3BEE] text-[0.75rem] xl:text-[1rem] font-[400] leading-[150%] border-[1px] border-solid border-[#5E3BEE]'>
           Contact
         </Button>
       </div>
       {/* Open Menu Button */}
-      <div className="menuIcon block md:hidden">
+      <div className='menuIcon block md:hidden'>
         <MenuButton onClick={() => setMenuState(true)}>
           <RiMenu5Fill />
         </MenuButton>
