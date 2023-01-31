@@ -1,0 +1,66 @@
+/** @format */
+
+export const skills = [
+  {
+    sectionName: "Frontend Development",
+    sectionDetails: [
+      { name: "JavaScript", icon: "/assets/js.svg" },
+      { name: "TypeScript", icon: "/assets/ts.svg" },
+      { name: "Node.js", icon: "/assets/nodejs.svg" },
+      { name: "React.js", icon: "/assets/react.svg" },
+      { name: "React Hooks", icon: "/assets/react-hooks.svg" },
+      { name: "Redux", icon: "/assets/redux.svg" },
+      { name: "Next.js", icon: "/assets/nextjs.svg" },
+      { name: "React Query", icon: "/assets/react-query.svg" },
+      { name: "HTML5", icon: "/assets/html5.svg" },
+      { name: "CSS3", icon: "/assets/css3.svg" },
+      { name: "Tailwind CSS", icon: "/assets/tailwind.svg" },
+      { name: "Styled Components", icon: "/assets/styled-components.png" },
+      { name: "React Spring", icon: "/assets/react-spring.svg" },
+      { name: "Framer Motion", icon: "/assets/framer-motion.svg" },
+      { name: "GraphQL", icon: "/assets/graphql.svg" },
+      { name: "Apollo Client", icon: "/assets/apollo.svg" },
+      { name: "Cypress", icon: "/assets/cypress.png" },
+      { name: "Jest", icon: "/assets/jest.png" },
+      { name: "Testing Library", icon: "/assets/rtl.png" },
+      { name: "Yarn", icon: "/assets/yarn.png" },
+      { name: "Vercel", icon: "/assets/vercel.svg" },
+      { name: "Netlify", icon: "/assets/netlify.png" },
+    ],
+  },
+  {
+    sectionName: "Backend Development",
+    sectionDetails: [
+      { name: "Python", icon: "/assets/python.svg" },
+      { name: "Flask", icon: "/assets/flask.svg" },
+      { name: "SQL", icon: "/assets/sql.png" },
+      { name: "Postgres", icon: "/assets/postgres.svg" },
+      { name: "SQL Alchemy", icon: "/assets/sql-alchemy.png" },
+      { name: "Auth0", icon: "/assets/auth0.png" },
+      { name: "JWT", icon: "/assets/jwt.svg" },
+      { name: "Bash", icon: "/assets/bash.svg" },
+    ],
+  },
+  {
+    sectionName: "Blockchain Development",
+    sectionDetails: [
+      { name: "Solidity", icon: "/assets/solidity.svg" },
+      { name: "Smart Contracts", icon: "/assets/smart-contracts.png" },
+      { name: "Ethereum", icon: "/assets/ethereum.svg" },
+      { name: "Metmask", icon: "/assets/metamask.png" },
+      { name: "Chainlink", icon: "/assets/chainlink.svg" },
+      { name: "Remix IDE", icon: "/assets/remix.png" },
+    ],
+  },
+  {
+    sectionName: "Tools",
+    sectionDetails: [
+      { name: "VS Code", icon: "/assets/vscode.svg" },
+      { name: "PyCharm", icon: "/assets/pycharm.svg" },
+      { name: "Git", icon: "/assets/git.svg" },
+      { name: "Github", icon: "/assets/github.svg" },
+      { name: "Gitlab", icon: "/assets/gitlab.svg" },
+      { name: "Postman", icon: "/assets/postman.png" },
+    ],
+  },
+];

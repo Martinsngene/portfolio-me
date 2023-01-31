@@ -17,3 +17,11 @@
 .title{
     @apply text-[#000] font-light text-[2rem] leading-[2.375rem];
 }
+
+.hobby, .expertise{
+    @apply text-[#000] font-light text-[1.25rem] leading-[1.875rem] flex;
+}
+
+.hobby h3, .expertise h3{
+@apply font-medium mr-1
+}
