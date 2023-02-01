@@ -1,0 +1,27 @@
+.container{
+    @apply bg-[#d4a373] h-full flex flex-col lg:flex-row items-center justify-between lg:px-[13.75rem];
+}
+
+.photo{
+    @apply w-[80%] lg:w-[40%]
+}
+
+.info{
+    @apply w-[80%] lg:w-[55%]
+}
+
+.name{
+    @apply text-[#361921] font-bold text-[3.1rem] leading-[3.75rem];
+}
+
+.title{
+    @apply text-[#000] font-light text-[2rem] leading-[2.375rem];
+}
+
+.hobby, .expertise{
+    @apply text-[#000] font-light text-[1.25rem] leading-[1.875rem] flex;
+}
+
+.hobby h3, .expertise h3{
+@apply font-medium mr-1
+}

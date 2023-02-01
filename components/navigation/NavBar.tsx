@@ -1,12 +1,11 @@
 /** @format */
 
-import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { RiMenu5Fill } from "react-icons/ri";
-import { Button, MenuButton } from "../Button";
+import { Button, MenuButton } from "../button";
 import { Links } from "../constants/NavBar.Schema";
-import Menu from "../Menu";
+import Menu from "../menu";
 const NavBar = () => {
   const [navBarPosition, setNavBarPosition] = useState(false);
   const [menuState, setMenuState] = useState(false);

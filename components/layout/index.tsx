@@ -8,15 +8,17 @@ import Footer from "../navigation/Footer";
 
 const Layout = ({ children }: GlobalPropsI) => {
   return (
-    <div className={styles.container}>
-      <>
-        <NavBar />
-      </>
-      {children}
-      <>
-        <Footer />
-      </>
-    </div>
+    <>
+      <div className={styles.container}>
+        <>
+          <NavBar />
+        </>
+        {children}
+        <>
+          <Footer />
+        </>
+      </div>
+    </>
   );
 };
 
