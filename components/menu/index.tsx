@@ -38,16 +38,6 @@ const Menu = ({ ctrlMenu }: MenuPropsI) => {
     onClick: () => set(!flip),
   });
 
-  useEffect(() => {
-    // Mount of component
-    console.log("Mounted");
-    setMounted(false);
-    return () => {
-      // Unmount of component
-      console.log("unMounted");
-      setMounted(true);
-    };
-  }, []);
   return (
     <animated.div
       className='bg-[#F5FCFF] top-0 right-0 left-0 absolute w-[100%] h-[100%] flex items-start justify-center'

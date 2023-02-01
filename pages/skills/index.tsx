@@ -4,28 +4,39 @@ import Image from "next/image";
 import React from "react";
 import { skills } from "../../components/constants/Skills.Schema";
 import Section from "../../components/section";
+import Seo from "../../components/seo";
 import styles from "./styles.module.css";
 
 const index = () => {
   return (
-    <Section>
-      <div id='skills' className='bg-[#a8dadc] h-full w-full'>
-        {skills.map((skill) => {
-          return (
-            <div className='mb-[1rem] flex flex-col items-center justify-center'>
-              <h1>{skill.sectionName}</h1>
-              <div className='flex items-center justify-center flex-wrap'>
-                {skill.sectionDetails.map((item) => {
-                  return (
-                    <Skill icon={item.icon} name={item.name} alt={item.name} />
-                  );
-                })}
+    <>
+      <Seo title='Skills' />
+      <Section>
+        <div id='skills' className='bg-[#5b8e7d] h-full w-full'>
+          {skills.map((skill) => {
+            return (
+              <div
+                key={skill.sectionName}
+                className='mb-[1rem] flex flex-col items-center justify-center'>
+                <h1>{skill.sectionName}</h1>
+                <div className='flex items-center justify-center flex-wrap'>
+                  {skill.sectionDetails.map((item) => {
+                    return (
+                      <Skill
+                        key={item.icon}
+                        icon={item.icon}
+                        name={item.name}
+                        alt={item.name}
+                      />
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-    </Section>
+            );
+          })}
+        </div>
+      </Section>
+    </>
   );
 };
 

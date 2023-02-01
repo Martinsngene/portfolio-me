@@ -9,7 +9,7 @@ const index = () => {
     <>
       <Seo title='About' />
       <Section>
-        <div id='about' className='bg-[#f4a261] h-full'></div>
+        <div id='about' className='bg-[#f4e285] h-full'></div>
       </Section>
     </>
   );

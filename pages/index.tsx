@@ -1,17 +1,15 @@
 /** @format */
 
-import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Section from "../components/section";
+import Seo from "../components/seo";
 import styles from "../styles/Home.module.css";
 
 const Home = () => {
   return (
     <>
-      <Head>
-        <title>Martins Ngene</title>
-      </Head>
+      <Seo title='Martins Ngene' />
       <Section>
         <div id='home' className={styles.container}>
           <Photo />
