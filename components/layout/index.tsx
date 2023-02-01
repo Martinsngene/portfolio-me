@@ -4,6 +4,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import NavBar from "../navigation/NavBar";
 import { GlobalPropsI } from "../interface";
+import Footer from "../navigation/Footer";
 
 const Layout = ({ children }: GlobalPropsI) => {
   return (
@@ -12,6 +13,9 @@ const Layout = ({ children }: GlobalPropsI) => {
         <NavBar />
       </>
       {children}
+      <>
+        <Footer />
+      </>
     </div>
   );
 };

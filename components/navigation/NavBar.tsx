@@ -29,7 +29,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`w-[100%] shadow h-[60px] z-50 flex items-center justify-between px-[3rem] top-0 left-0 right-0 bg-[rgba(54,25,33,0.2)] ${
+      className={`w-[100%] shadow h-[7.5vh] z-50 flex items-center justify-between px-4 lg:px-[3rem] top-0 left-0 right-0 bg-white ${
         navBarPosition ? "fixed shadow-md" : "static"
       }`}>
       {/* Logo */}
@@ -43,7 +43,7 @@ const NavBar = () => {
           return (
             <Link key={index} href={item.route}>
               <Button
-                className={`text-[#361921] text-[0.75rem] xl:text-[1.25rem] font-[700] leading-[1.5rem]`}>
+                className={`text-[#361921] text-[1rem] font-[700] leading-[1.5rem]`}>
                 {item.link}
               </Button>
             </Link>

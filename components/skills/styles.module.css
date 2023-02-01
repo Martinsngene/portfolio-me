@@ -1,0 +1,11 @@
+.icon{
+    @apply relative w-[80px] h-[80px] mt-2
+}
+
+.name{
+    @apply bg-[#48cae4] w-[120px] text-center  text-white
+}
+
+.skillContainer{
+    @apply w-[120px] rounded-[0.75rem] flex flex-col items-center justify-between border border-[#000] font-medium py-2 text-[0.875rem]
+}

@@ -2,8 +2,10 @@
 
 import Head from "next/head";
 import AboutSection from "../components/about";
+import CertificationModule from "../components/certifications";
 import HomeSection from "../components/home";
 import Layout from "../components/layout";
+import PortfolioModule from "../components/portfolio";
 import SkillsModule from "../components/skills";
 // import styles from "../styles/Home.module.css";
 
@@ -18,7 +20,9 @@ const Home = () => {
       <Layout>
         <HomeSection />
         <AboutSection />
+        <PortfolioModule />
         <SkillsModule />
+        <CertificationModule />
         {/* <a
           target='_blank'
           href='https://icons8.com/icon/Sx0c8V3R9jEJ/auth0-the-solution-you-need-for-web%2C-mobile%2C-iot%2C-and-internal-applications.'>

@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     scroll-snap-align: start;
     
 }

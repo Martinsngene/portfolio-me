@@ -1,13 +1,13 @@
 .container{
-    @apply bg-[#fff] h-full flex items-center justify-between lg:px-[13.75rem];
+    @apply bg-[#fff] h-full flex flex-col lg:flex-row items-center justify-between lg:px-[13.75rem];
 }
 
 .photo{
-    @apply w-[40%]
+    @apply w-[80%] lg:w-[40%]
 }
 
 .info{
-    @apply w-[55%]
+    @apply w-[80%] lg:w-[55%]
 }
 
 .name{
