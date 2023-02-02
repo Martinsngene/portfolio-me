@@ -11,30 +11,28 @@ const index = () => {
   return (
     <>
       <Seo title='Skills' />
-      <Section>
-        <div id='skills' className='bg-[#5b8e7d] h-full w-full'>
-          {skills.map((skill) => {
-            return (
-              <div
-                key={skill.sectionName}
-                className='mb-[1rem] flex flex-col items-center justify-center'>
-                <h1>{skill.sectionName}</h1>
-                <div className='flex items-center justify-center flex-wrap'>
-                  {skill.sectionDetails.map((item) => {
-                    return (
-                      <Skill
-                        key={item.icon}
-                        icon={item.icon}
-                        name={item.name}
-                        alt={item.name}
-                      />
-                    );
-                  })}
-                </div>
+      <Section className='bg-[#5b8e7d]'>
+        {skills.map((skill) => {
+          return (
+            <div
+              key={skill.sectionName}
+              className='mb-[1rem] flex flex-col items-center '>
+              <h1 className={styles.sectionName}>{skill.sectionName}</h1>
+              <div className='grid grid-cols-3 lg:grid-cols-8'>
+                {skill.sectionDetails.map((item) => {
+                  return (
+                    <Skill
+                      key={item.icon}
+                      icon={item.icon}
+                      name={item.name}
+                      alt={item.name}
+                    />
+                  );
+                })}
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </Section>
     </>
   );

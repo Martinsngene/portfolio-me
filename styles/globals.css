@@ -3,14 +3,28 @@
 @tailwind utilities;
 
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Fira Sans Extra Condensed', sans-serif !important;
 }
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 3px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
 
 a {
   color: inherit;
@@ -21,7 +35,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -29,4 +43,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */

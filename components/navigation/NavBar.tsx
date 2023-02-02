@@ -1,5 +1,6 @@
 /** @format */
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { RiMenu5Fill } from "react-icons/ri";
@@ -28,13 +29,12 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`w-[100%] shadow h-[7.5vh] z-50 flex items-center justify-between px-4 lg:px-[3rem] top-0 left-0 right-0 bg-white ${
+      className={`w-[100%] h-[7.5vh] z-50 flex items-center justify-between px-4 lg:px-[3rem] top-0 left-0 right-0 bg-white border-0 ${
         navBarPosition ? "fixed shadow-md" : "static"
       }`}>
       {/* Logo */}
-      <div className='logo'>
-        {/* <Image src='/logo.png' width={100} height={25} /> */}
-        Martins Ngene
+      <div className='logo flex items-center justify-center'>
+        <Image src='/logo.png' width={50} height={50} />
       </div>
       <ul className='links w-[50%] xl:w-[40%] items-center justify-between hidden md:flex'>
         {/* Links from NavBar Schema mapped into buttons */}

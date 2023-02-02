@@ -4,8 +4,8 @@ import React from "react";
 import { GlobalPropsI } from "../interface";
 import styles from "./styles.module.css";
 
-const Section = ({ children }: GlobalPropsI) => {
-  return <div className={styles.container}>{children}</div>;
+const Section = ({ children, className }: GlobalPropsI) => {
+  return <div className={`${styles.container} ${className}`}>{children}</div>;
 };
 
 export default Section;

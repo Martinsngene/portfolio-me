@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 interface ButtonPropsI {
   children: React.ReactNode;
@@ -19,8 +21,7 @@ export const MenuButton = (props: ButtonPropsI) => {
   return (
     <Button
       {...props}
-      className="text-[1.8rem] hover:text-[#5E3BEE] transition ease-in-out delay-150 hover:scale-x-125 hover:scale-110 duration-300"
-    >
+      className='text-[1.8rem] hover:text-[#5E3BEE] transition ease-in-out delay-150 hover:scale-x-125 hover:scale-110 duration-300'>
       {props.children}
     </Button>
   );

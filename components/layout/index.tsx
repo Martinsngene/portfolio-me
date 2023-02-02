@@ -13,7 +13,7 @@ const Layout = ({ children }: GlobalPropsI) => {
         <>
           <NavBar />
         </>
-        {children}
+        <div className='h-[85vh]'>{children}</div>
         <>
           <Footer />
         </>

@@ -1,5 +1,5 @@
 .container{
-  @apply w-full h-[85vh];
+  @apply w-full h-full overflow-y-auto;
     scroll-snap-align: start;
     
 }
