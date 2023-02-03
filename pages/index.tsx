@@ -10,7 +10,10 @@ const Home = () => {
   return (
     <>
       <Seo title='Martins Ngene' />
-      <Section showHeader header='Hi there, welcome!' className='bg-[#8cb369]'>
+      <Section
+        showHeader
+        header='Hi there, welcome! 👋'
+        className='bg-[#8cb369]'>
         <div className={styles.container}>
           <Photo />
           <Info />

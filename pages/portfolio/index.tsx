@@ -10,7 +10,7 @@ const index = () => {
   return (
     <>
       <Seo title='Portfolio' />
-      <Section showHeader header='Work history' className='bg-[#f4a259]'>
+      <Section showHeader header='Work history 💼' className='bg-[#f4a259]'>
         <div className='grid grid-cols-1 lg:grid-cols-4 h-fit'>
           {projects.map((project, index) => {
             return (

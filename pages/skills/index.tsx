@@ -11,7 +11,7 @@ const index = () => {
   return (
     <>
       <Seo title='Skills' />
-      <Section showHeader header='Complete toolbox' className='bg-[#5b8e7d]'>
+      <Section showHeader header='Complete toolbox 🧰' className='bg-[#5b8e7d]'>
         {skills.map((skill) => {
           return (
             <div key={skill.sectionName} className='mb-[1rem] flex flex-col'>

@@ -4,5 +4,5 @@
 }
 
 .header{
-  @apply text-[#000] italic font-bold text-[1.5rem] leading-[2.375rem];
+  @apply text-[#000] font-extrabold text-[1.5rem] leading-[2.375rem];
 }

@@ -8,7 +8,7 @@ const index = () => {
   return (
     <>
       <Seo title='About' />
-      <Section showHeader header='$whoami' className='bg-[#f4e285]'>
+      <Section showHeader header='$whoami 🤓' className='bg-[#f4e285]'>
         <div></div>
       </Section>
     </>
