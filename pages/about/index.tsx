@@ -8,8 +8,8 @@ const index = () => {
   return (
     <>
       <Seo title='About' />
-      <Section>
-        <div id='about' className='bg-[#f4e285] h-full'></div>
+      <Section showHeader header='$whoami' className='bg-[#f4e285]'>
+        <div></div>
       </Section>
     </>
   );

@@ -10,8 +10,8 @@ const index = () => {
   return (
     <>
       <Seo title='Certifications' />
-      <Section className='bg-[#bc4b51]'>
-        <div className='grid grid-cols-1 lg:grid-cols-4 h-fit px-[3rem] py-[3rem]'>
+      <Section showHeader header="I'm certified" className='bg-[#bc4b51]'>
+        <div className='grid grid-cols-1 lg:grid-cols-4 h-fit'>
           {certifications.map((certificate, index) => {
             return (
               <Card

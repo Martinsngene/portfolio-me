@@ -11,14 +11,12 @@ const index = () => {
   return (
     <>
       <Seo title='Skills' />
-      <Section className='bg-[#5b8e7d]'>
+      <Section showHeader header='Complete toolbox' className='bg-[#5b8e7d]'>
         {skills.map((skill) => {
           return (
-            <div
-              key={skill.sectionName}
-              className='mb-[1rem] flex flex-col items-center '>
+            <div key={skill.sectionName} className='mb-[1rem] flex flex-col'>
               <h1 className={styles.sectionName}>{skill.sectionName}</h1>
-              <div className='grid grid-cols-3 lg:grid-cols-8'>
+              <div className='grid grid-cols-3 lg:grid-cols-12'>
                 {skill.sectionDetails.map((item) => {
                   return (
                     <Skill

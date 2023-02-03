@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <>
       <Seo title='Martins Ngene' />
-      <Section>
-        <div id='home' className={styles.container}>
+      <Section showHeader header='Hi there, welcome!' className='bg-[#8cb369]'>
+        <div className={styles.container}>
           <Photo />
           <Info />
         </div>
@@ -23,7 +23,7 @@ const Home = () => {
 const Photo = () => {
   return (
     <div className={styles.photo}>
-      <Image src='/photo.jpg' alt='' width={445} height={610} />
+      <Image src='/photo.jpg' alt='' width={395} height={560} />
     </div>
   );
 };

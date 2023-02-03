@@ -1,5 +1,8 @@
 .container{
-  @apply w-full h-full overflow-y-auto;
+  @apply w-full h-full overflow-y-auto px-[3rem] py-[1rem];
     scroll-snap-align: start;
-    
+}
+
+.header{
+  @apply text-[#000] italic font-bold text-[1.5rem] leading-[2.375rem];
 }

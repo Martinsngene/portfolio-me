@@ -1,6 +1,8 @@
 /** @format */
 
 export interface GlobalPropsI {
+  header?: string;
+  showHeader?: boolean;
   children: React.ReactNode;
   className?: string;
 }

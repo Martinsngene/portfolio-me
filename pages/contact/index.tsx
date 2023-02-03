@@ -1,5 +1,6 @@
 /** @format */
 
+import Image from "next/image";
 import Section from "../../components/section";
 import styles from "./styles.module.css";
 import Seo from "../../components/seo";
@@ -11,10 +12,12 @@ const index = () => {
   return (
     <>
       <Seo title='Contact' />
-      <Section className='bg-[#fcca46]'>
-        <div className='flex w-full px-[3rem] py-[3rem]'>
-          <div className='w-1/2'></div>
-          <div className='w-1/2 flex flex-col items-center justify-center'>
+      <Section showHeader header='Get in touch' className='bg-[#fcca46]'>
+        <div className='flex items-center justify-between w-full'>
+          <div className='w-[47.5%] relative h-[400px]'>
+            <Image src='/contact.jpg' layout='fill' alt='contact' />
+          </div>
+          <div className='w-[47.5%] flex flex-col items-center justify-center'>
             <div className='w-full'>
               <Input
                 id='name'
