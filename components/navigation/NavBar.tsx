@@ -33,7 +33,7 @@ const NavBar = () => {
         navBarPosition ? "fixed shadow-md" : "static"
       }`}>
       {/* Logo */}
-      <div className='logo flex items-center justify-center'>
+      <div className='logo w-[30px] lg:w-[50px] h-[30px] lg:h-[50px] flex items-center justify-center'>
         <Image src='/logo.png' width={50} height={50} />
       </div>
       <ul className='links w-[50%] xl:w-[40%] items-center justify-between hidden md:flex'>
@@ -42,7 +42,7 @@ const NavBar = () => {
           return (
             <Link key={index} href={item.route}>
               <Button
-                className={`text-[#361921] text-[1rem] font-[700] leading-[1.5rem]`}>
+                className={`text-[#361921] text-[0.75rem] xl:text-[1rem] font-[700] leading-[1.5rem]`}>
                 {item.link}
               </Button>
             </Link>

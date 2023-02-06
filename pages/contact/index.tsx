@@ -18,7 +18,7 @@ const index = () => {
       <Section showHeader header='Get in touch 📞' className='bg-[#fcca46]'>
         <div className='grid grid-cols-1 gap-0 lg:gap-8 lg:grid-cols-2 w-full'>
           <div className='col-span-1 w-full'>
-            <div className='relative w-full h-[400px]'>
+            <div className='relative w-full h-[200px] lg:h-[400px]'>
               <Image src='/contact.jpg' layout='fill' alt='contact' />
             </div>
             <div className={styles.contactDetails}>

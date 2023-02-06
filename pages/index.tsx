@@ -15,7 +15,7 @@ const Home = () => {
         header='Hi there, welcome! 👋'
         className='bg-[#8cb369]'>
         <div className={styles.container}>
-          <Photo />
+          {/* <Photo /> */}
           <Info />
         </div>
       </Section>

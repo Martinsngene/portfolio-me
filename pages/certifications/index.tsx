@@ -11,19 +11,21 @@ const index = () => {
     <>
       <Seo title='Certifications' />
       <Section showHeader header="I'm certified 👨‍🎓" className='bg-[#bc4b51]'>
-        <div className='grid grid-cols-1 lg:grid-cols-4 h-fit'>
-          {certifications.map((certificate, index) => {
-            return (
-              <Card
-                className='my-2 lg:my-8'
-                key={index}
-                imgUrl={certificate.imgUrl}
-                link={certificate.link}
-                linkLabel={certificate.linkLabel}
-                description={certificate.description}
-              />
-            );
-          })}
+        <div className='flex-center'>
+          <div className='align-cards'>
+            {certifications.map((certificate, index) => {
+              return (
+                <Card
+                  className='my-2 lg:my-8'
+                  key={index}
+                  imgUrl={certificate.imgUrl}
+                  link={certificate.link}
+                  linkLabel={certificate.linkLabel}
+                  description={certificate.description}
+                />
+              );
+            })}
+          </div>
         </div>
       </Section>
     </>

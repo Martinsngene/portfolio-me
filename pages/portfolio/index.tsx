@@ -11,20 +11,22 @@ const index = () => {
     <>
       <Seo title='Portfolio' />
       <Section showHeader header='Work history 💼' className='bg-[#f4a259]'>
-        <div className='grid grid-cols-1 lg:grid-cols-4 h-fit'>
-          {projects.map((project, index) => {
-            return (
-              <Card
-                className='my-2 lg:my-8'
-                key={index}
-                imgUrl={project.imgUrl}
-                link={project.link}
-                linkLabel={project.linkLabel}
-                description={project.description}
-                name={project.name}
-              />
-            );
-          })}
+        <div className='flex-center'>
+          <div className='align-cards'>
+            {projects.map((project, index) => {
+              return (
+                <Card
+                  // className='self-center'
+                  key={index}
+                  imgUrl={project.imgUrl}
+                  link={project.link}
+                  linkLabel={project.linkLabel}
+                  description={project.description}
+                  name={project.name}
+                />
+              );
+            })}
+          </div>
         </div>
       </Section>
     </>

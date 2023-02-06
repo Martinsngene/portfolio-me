@@ -35,6 +35,16 @@ a {
   box-sizing: border-box;
 }
 
+/* Card Container Alignment */
+.align-cards{
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 h-fit;
+}
+
+/* Center an item with flexbox */
+.flex-center{
+  @apply flex items-center justify-center w-full;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

@@ -3,11 +3,11 @@
 }
 
 .contactDetails{
-    @apply mt-4 lg:mt-8;
+    @apply my-4 lg:my-8;
 }
 
 .contactDetails div{
-    @apply flex items-center text-[1.2rem];
+    @apply flex items-center text-[1rem] lg:text-[1.2rem];
 }
 
 .contactDetails div a{
