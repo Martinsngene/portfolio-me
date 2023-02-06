@@ -1,11 +1,11 @@
 /* Card Container */
 .container{
-    @apply bg-[#fff] w-[200px] sm:w-[150px] lg:w-[250px] xl:w-[300px] p-2 hover:shadow-2xl mb-[1rem] rounded-md md:mb-0;
+    @apply bg-[#fff] w-[200px] sm:w-[150px] lg:w-[200px] xl:w-[300px] p-2 hover:shadow-2xl mb-[1rem] rounded-md md:mb-0;
 }
 
 /* Card Image Container */
 .cardImgContainer{
-  @apply  relative w-full h-[150px] sm:h-[100px] lg:h-[180px] xl:h-[220px] lg:w-full flex  items-center justify-center;
+  @apply  relative w-full h-[150px] sm:h-[100px] lg:h-[150px] xl:h-[220px] lg:w-full flex  items-center justify-center;
 }
 
 /* Name */
