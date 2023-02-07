@@ -49,12 +49,6 @@ const NavBar = () => {
           );
         })}
       </ul>
-      {/* Contact button  */}
-      {/* <div className='contact hidden md:block'>
-        <Button className='w-[108px] h-[32px] bg-[#fff] rounded-[4px] text-[#5E3BEE] text-[0.75rem] xl:text-[1rem] font-[400] leading-[150%] border-[1px] border-solid border-[#5E3BEE]'>
-          Contact
-        </Button>
-      </div> */}
       {/* Open Menu Button */}
       <div className='menuIcon block md:hidden'>
         <MenuButton onClick={() => setMenuState(true)}>
@@ -62,7 +56,7 @@ const NavBar = () => {
         </MenuButton>
       </div>
       {/* Menu */}
-      {menuState && <Menu ctrlMenu={() => setMenuState(!menuState)} />}
+      {menuState && <Menu ctrlMenu={() => setMenuState(false)} />}
     </nav>
   );
 };

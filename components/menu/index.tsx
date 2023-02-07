@@ -1,7 +1,7 @@
 /** @format */
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSpring, animated, config } from "react-spring";
 import { RiMenu4Line } from "react-icons/ri";
 import { Button, MenuButton } from "../button";
@@ -14,7 +14,6 @@ interface MenuPropsI {
 const Menu = ({ ctrlMenu }: MenuPropsI) => {
   // Animation from React Spring
   const [flip, set] = useState(false);
-  const [isMounted, setMounted] = useState(false);
 
   //   Mount Component Animation
   const props = useSpring({
@@ -27,21 +26,10 @@ const Menu = ({ ctrlMenu }: MenuPropsI) => {
     onClick: () => set(!flip),
   });
 
-  //   Unmount Component Animation
-  const unMountProps = useSpring({
-    to: { width: `0%`, opacity: 0, height: `0%` },
-    from: { width: `100%`, opacity: 1, height: `100%` },
-    reset: true,
-    reverse: flip,
-    delay: 200,
-    config: config.molasses,
-    onClick: () => set(!flip),
-  });
-
   return (
     <animated.div
-      className='bg-[#F5FCFF] top-0 right-0 left-0 absolute w-[100%] h-[100%] flex items-start justify-center'
-      style={flip ? unMountProps : props}>
+      className='bg-[#F5FCFF] z-50 top-0 right-0 left-0 absolute w-[100%] h-[100%] flex items-start justify-center'
+      style={flip ? props : props}>
       {/* Close Menu Button */}
       <div className='closeMenuBtn  absolute top-[1rem] right-[3rem]'>
         <MenuButton onClick={ctrlMenu}>

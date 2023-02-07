@@ -16,17 +16,19 @@ const index = () => {
           return (
             <div key={skill.sectionName} className='mb-[1rem] flex flex-col'>
               <h1 className={styles.sectionName}>{skill.sectionName}</h1>
-              <div className='grid grid-cols-3 lg:grid-cols-12'>
-                {skill.sectionDetails.map((item) => {
-                  return (
-                    <Skill
-                      key={item.icon}
-                      icon={item.icon}
-                      name={item.name}
-                      alt={item.name}
-                    />
-                  );
-                })}
+              <div className='flex-center'>
+                <div className='grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 h-fit'>
+                  {skill.sectionDetails.map((item) => {
+                    return (
+                      <Skill
+                        key={item.icon}
+                        icon={item.icon}
+                        name={item.name}
+                        alt={item.name}
+                      />
+                    );
+                  })}
+                </div>
               </div>
             </div>
           );
